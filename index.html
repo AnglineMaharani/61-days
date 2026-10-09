@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌹 buat kak putri</title>
+    <meta name="description" content="A single div transforms into a beautiful blooming 3D rose.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@500;700&family=Fira+Code:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="vignette"></div>
+
+
+    <div class="spotlight"></div>
+    <div class="ambient-light" id="ambientLight"></div>
+
+    <div class="trigger-overlay" id="triggerOverlay">
+        <div class="glass-card">
+            <div class="card-glow"></div>
+            <div class="rose-icon">🌹</div>
+            <h2 class="title">for u, as always</h2>
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loadingBar"></div>
+            </div>
+            <p class="status-text" id="statusText">sabar loading dulu hehe</p>
+            <button class="start-button" id="startButton" disabled>
+                <span class="btn-text">Tap to Bloom</span>
+                <span class="btn-shine"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="scene">
+        <div class="rose-wrapper" id="roseWrapper">
+            <div class="grass-ground" id="grassGround"></div>
+            <div class="stem-group">
+                <div class="stem" id="stem">
+                    <div class="stem-highlight"></div>
+                </div>
+                <div class="thorn thorn-1" id="thorn1"></div>
+                <div class="thorn thorn-2" id="thorn2"></div>
+                <div class="leaf leaf-left" id="leafLeft">
+                    <div class="leaf-vein"></div>
+                </div>
+                <div class="leaf leaf-right" id="leafRight">
+                    <div class="leaf-vein"></div>
+                </div>
+            </div>
+
+            <div class="calyx" id="calyx"></div>
+
+            <div class="rose-head" id="roseHead">
+                <div class="rose-glow"></div>
+                <div class="rose-glow-inner"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- NOTE BUTTON -->
+<button class="note-button" id="noteButton">
+    ✉ Open Notes
+</button>
+
+
+<!-- LETTER PANEL -->
+<div class="note-panel" id="notePanel">
+
+    <div class="letter">
+
+        <button class="back-button" id="backButton">
+            ← Back
+        </button>
+
+
+        <h2>Dear Kakak Putri</h2>
+
+
+        <p>
+            I don't know how 61 days could become this meaningful,
+            tapi yang ku tau setiap moment kecil bersama kak putri menjadi sesuatu yang berharga.
+        </p>
+
+
+        <p>
+            Thank you for every conversation, every smile, and every little kindness that you give.
+            Terima kasih sudah hadir dan membuat hari-hari ku terasa lebih indah dengan caramu sendiri.
+        </p>
+
+
+        <p>
+            Dalam 61 hari ini, ku belajar bahwa seseorang tidak harus 
+            membutuhkan waktu yang lama untuk menjadi spesial. Sometimes, a simple meeting with the right person can create beautiful memories.
+        </p>
+
+        <p>
+           I hope this little rose can remind you that there is someone who appreciates you, 
+           cares about you, and always wishes the best for you.
+        </p>
+
+        <p>
+           Terima kasih sudah menjadi Kak Putri yang selalu punya cara tersendiri 
+           untuk membuat semuanya terasa lebih baik. ♡
+        </p>
+
+        <div class="signature">
+            Dari orang keren :D
+        </div>
+
+
+    </div>
+
+</div>
+
+    <div id="fallingPetals"></div>
+
+    <audio id="bgMusic" loop>
+    <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
